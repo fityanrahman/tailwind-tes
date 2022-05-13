@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Up Your Beauty</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="">
+    <script defer src="assets/css/all.js"></script>
+</head>
+
+<body>
+    <header class="md:container md:px-48 md:mx-auto flex justify-between items-center mt-8">
+        <a href="/" class="logo w-1/5"><img src="assets/img/head_logo.png" alt=""></a>
+        <div class="head-links w-2/5 px-8 flex justify-between">
+            <a href="successes.html" class="font-av-light text-lg">Success Stories</a>
+            <a href="sma.html" class="font-av-light text-lg">Social Media</a>
+        </div>
+        <input type="search"
+            class="search w-1/5 h-8 block border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 placeholder-red-500"
+            placeholder="Find Your Clinic!">
+    </header>
+
+    <section class="maps mt-24 bg-yellow-100 p-12">
+        <div class="md:container md:px-48 md:mx-auto flex">
+            <div class="map w-1/2" id="map"></div>
+            <div class="opsi w-1/2">
+                <div class="p-12 bg-white">
+                    <h1 class="text-red-900 font-av-heavy">Cari klinik yang terdekat dengan Anda</h1>
+                    <input type="search"
+                        class="search w-full mt-2 h-8 block border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 placeholder-red-500"
+                        placeholder="Masukkan alamat/ daerah/ kota">
+                    <div class="line w-full border-dashed border-gray-400 border my-4"></div>
+                    <div>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" checked>
+                            <span class="ml-2">Botulinum Toxin?</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox">
+                            <span class="ml-2">Facial Filler</span>
+                        </label>
+                    </div>
+                    <div class="line w-full border-dashed border-gray-400 border my-4"></div>
+                    <p class="text-red-900 font-av-heavy mt-4">86 Results:</p>
+                    <div class="h-96 overflow-y-auto">
+                        <div class="alamat mt-4">
+                            <p class="font-av-heavy">1. Name of Clinic</p>
+                            <p>Address lorem ipsum dolor sit amet</p>
+                            <p>Jakarta Pusat</p>
+                            <p>t: (+62) 21 123 4567</p>
+                            <p class="mt-2 text-red-800">Operating Hours:</p>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>M - F</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>10 AM - 5 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>Sat</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>11 AM - 3 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alamat mt-4">
+                            <p class="font-av-heavy">2. Name of Clinic</p>
+                            <p>Address lorem ipsum dolor sit amet</p>
+                            <p>Jakarta Pusat</p>
+                            <p>t: (+62) 21 123 4567</p>
+                            <p class="mt-2 text-red-800">Operating Hours:</p>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>M - F</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>10 AM - 5 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>Sat</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>11 AM - 3 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alamat mt-4">
+                            <p class="font-av-heavy">3. Name of Clinic</p>
+                            <p>Address lorem ipsum dolor sit amet</p>
+                            <p>Jakarta Pusat</p>
+                            <p>t: (+62) 21 123 4567</p>
+                            <p class="mt-2 text-red-800">Operating Hours:</p>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>M - F</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>10 AM - 5 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>Sat</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>11 AM - 3 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="alamat mt-4">
+                            <p class="font-av-heavy">3. Name of Clinic</p>
+                            <p>Address lorem ipsum dolor sit amet</p>
+                            <p>Jakarta Pusat</p>
+                            <p>t: (+62) 21 123 4567</p>
+                            <p class="mt-2 text-red-800">Operating Hours:</p>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>M - F</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>10 AM - 5 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>Sat</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>11 AM - 3 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alamat mt-4">
+                            <p class="font-av-heavy">3. Name of Clinic</p>
+                            <p>Address lorem ipsum dolor sit amet</p>
+                            <p>Jakarta Pusat</p>
+                            <p>t: (+62) 21 123 4567</p>
+                            <p class="mt-2 text-red-800">Operating Hours:</p>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>M - F</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>10 AM - 5 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>Sat</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>11 AM - 3 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alamat mt-4">
+                            <p class="font-av-heavy">3. Name of Clinic</p>
+                            <p>Address lorem ipsum dolor sit amet</p>
+                            <p>Jakarta Pusat</p>
+                            <p>t: (+62) 21 123 4567</p>
+                            <p class="mt-2 text-red-800">Operating Hours:</p>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>M - F</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>10 AM - 5 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>Sat</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>11 AM - 3 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alamat mt-4">
+                            <p class="font-av-heavy">3. Name of Clinic</p>
+                            <p>Address lorem ipsum dolor sit amet</p>
+                            <p>Jakarta Pusat</p>
+                            <p>t: (+62) 21 123 4567</p>
+                            <p class="mt-2 text-red-800">Operating Hours:</p>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>M - F</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>10 AM - 5 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>Sat</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>11 AM - 3 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alamat mt-4">
+                            <p class="font-av-heavy" onclick="testFunction(lat, lon)">3. Name of Clinic</p>
+                            <p>Address lorem ipsum dolor sit amet</p>
+                            <p>Jakarta Pusat</p>
+                            <p>t: (+62) 21 123 4567</p>
+                            <p class="mt-2 text-red-800">Operating Hours:</p>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>M - F</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>10 AM - 5 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/5">
+                                    <p>Sat</p>
+                                </div>
+                                <div class="w-4/5">
+                                    <p>11 AM - 3 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-red-900 mt-12">
+                        Syarat & Ketentuan pengguna*
+                        <br> Lorem ipsum dolor sit amet. Vestibulum sagittis odio non mi pellentesque venenatis. Morbi
+                        lacinia ultrices mattis. Quisque eget nisi eget quam ornare laoreet aliquet nec felis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="desc mt-24 md:container md:px-48 md:mx-auto">
+        <p class="text-xl text-center">Perawatan dengan Botulinum Toxin dan/atau Face Filler ditawarkan oleh banyak
+            salon kecantikan, studio kosmetik, pusat kecantikan, dan praktik medis.
+            <br> Selain hasil yang ingin dicapai, keamanan dan kepercayaan Anda dalam treatment adalah hal yang sangat
+            penting. Oleh karena itu, disarankan untuk mempercayakan diri Anda di tangan yang berpengalaman secara medis
+            untuk treatment dengan Botulinum Toxin dan Facial Filler.
+            <br> <br> Temukan klinik yang terpercaya dan berkualitas untuk perawatan Anda.
+        </p>
+    </section>
+
+    <footer class="bg-red-900 py-8 mt-24">
+        <div class="foot-content md:container md:px-48 md:mx-auto">
+            <div class="foot-top flex justify-between items-center md:mb-6">
+                <img src="assets/img/logowht.png" alt="" class="logo w-1/4 pr-16">
+                <div class="head-links w-2/4 flex justify-between text-white">
+                    <a href="successes.html">SUCCESS STORIES</a>
+                    <a href="sma.html">SOCIAL MEDIA</a>
+                    <a href="maps.html">FIND YOUR CLINIC</a>
+                </div>
+            </div>
+            <div class="follow-us w-2/4 flex justify-between ml-auto text-red-300">
+                <div class="ig">Follow Us <i class="fab fa-instagram"></i> @StepUpYourBeauty</div>
+                <div class="cr">COPYRIGHT &copy;STEPUPYOURBEAUTY 2021</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+
+    <script>
+        var map = L.map('map').setView([-6.2705376, 106.7588497], 18);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution:
+                '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+            maxZoom: 18
+        }).addTo(map);
+
+        L.marker([-6.2705376, 106.7588497]).addTo(map)
+            .bindPopup("<b>Hello world!</b><br />I am a popup.");
+
+        function testFunction(lat, lon) {
+            // alert("Test");
+            map.flyTo([13.87992, 45.9791], 12);
+        }
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            // x.innerHTML = "Latitude: " + position.coords.latitude +
+            //     "<br>Longitude: " + position.coords.longitude;
+            map.setView([position.coords.latitude, position.coords.longitude], 12);
+        }
+
+        // window.onload = testFunction;
+    </script>
+</body>
+
+</html>

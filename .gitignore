@@ -1,0 +1,8 @@
+/.DS_Store
+/.public
+/.vscode
+/node_modules
+/package-lock.json
+/package.json
+/src
+/tailwind.config.js
