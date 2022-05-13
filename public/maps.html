@@ -14,21 +14,20 @@
 </head>
 
 <body>
-    <header class="md:container md:px-48 md:mx-auto flex justify-between items-center mt-8">
+    <header class="lg:container px-6 xl:px-48 lg:mx-auto flex justify-between items-center mt-8">
         <a href="/" class="logo w-1/5"><img src="assets/img/head_logo.png" alt=""></a>
         <div class="head-links w-2/5 px-8 flex justify-between">
-            <a href="successes.html" class="font-av-light text-lg">Success Stories</a>
-            <a href="sma.html" class="font-av-light text-lg">Social Media</a>
+            <a href="sma.html" class="font-av-light text-sm md:text-lg">Social Media</a>
+            <a href="eshape.html" class="font-av-light text-sm md:text-lg">E-SHAPE</a>
         </div>
-        <input type="search"
-            class="search w-1/5 h-8 block border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 placeholder-red-500"
-            placeholder="Find Your Clinic!">
+        <input type="search" class="search w-1/5 text-xs sm:text-base h-8 block border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 placeholder-red-500" placeholder="Find Your Clinic!">
     </header>
 
-    <section class="maps mt-24 bg-yellow-100 p-12">
-        <div class="md:container md:px-48 md:mx-auto flex">
-            <div class="map w-1/2" id="map"></div>
-            <div class="opsi w-1/2">
+    <section class="maps mt-16 bg-yellow-100 py-8 md:p-12">
+        <!-- <div class="md:container md:px-48 md:mx-auto flex"> -->
+        <div class="xl:container px-6 md:px-12 xl:px-40 2xl:px-48 lg:mx-auto md:flex">
+            <div class="map h-96 md:w-1/2 md:h-auto" id="map"></div>
+            <div class="opsi md:w-1/2">
                 <div class="p-12 bg-white">
                     <h1 class="text-red-900 font-av-heavy">Cari klinik yang terdekat dengan Anda</h1>
                     <input type="search"
@@ -240,19 +239,14 @@
                             </div>
                         </div>
                     </div>
-
-                    <p class="text-xs text-red-900 mt-12">
-                        Syarat & Ketentuan pengguna*
-                        <br> Lorem ipsum dolor sit amet. Vestibulum sagittis odio non mi pellentesque venenatis. Morbi
-                        lacinia ultrices mattis. Quisque eget nisi eget quam ornare laoreet aliquet nec felis.
-                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="desc mt-24 md:container md:px-48 md:mx-auto">
-        <p class="text-xl text-center">Perawatan dengan Botulinum Toxin dan/atau Face Filler ditawarkan oleh banyak
+    <!-- <section class="desc mt-24 md:container md:px-48 md:mx-auto"> -->
+    <section class="xl:container px-6 md:px-12 xl:px-48 lg:mx-auto mt-16 pb-16">
+        <p class="md:text-xl text-center">Perawatan dengan Botulinum Toxin dan/atau Face Filler ditawarkan oleh banyak
             salon kecantikan, studio kosmetik, pusat kecantikan, dan praktik medis.
             <br> Selain hasil yang ingin dicapai, keamanan dan kepercayaan Anda dalam treatment adalah hal yang sangat
             penting. Oleh karena itu, disarankan untuk mempercayakan diri Anda di tangan yang berpengalaman secara medis
@@ -261,19 +255,24 @@
         </p>
     </section>
 
-    <footer class="bg-red-900 py-8 mt-24">
-        <div class="foot-content md:container md:px-48 md:mx-auto">
+    <footer class="bg-red-900 py-8">
+        <div class="foot-content xl:container px-6 md:px-12 xl:px-48 md:mx-auto text-xs lg:text-base">
             <div class="foot-top flex justify-between items-center md:mb-6">
-                <img src="assets/img/logowht.png" alt="" class="logo w-1/4 pr-16">
+                <a href="/" class="logo w-1/2 md:w-1/4 pr-16"><img src="http://dev6.stepupyourbeauty.com/templateFront/uploads/logo/logo_61963a1972c531.png" alt=""></a>
                 <div class="head-links w-2/4 flex justify-between text-white">
-                    <a href="successes.html">SUCCESS STORIES</a>
                     <a href="sma.html">SOCIAL MEDIA</a>
+                    <a href="eshape.html">E-SHAPE</a>
                     <a href="maps.html">FIND YOUR CLINIC</a>
                 </div>
             </div>
-            <div class="follow-us w-2/4 flex justify-between ml-auto text-red-300">
-                <div class="ig">Follow Us <i class="fab fa-instagram"></i> @StepUpYourBeauty</div>
-                <div class="cr">COPYRIGHT &copy;STEPUPYOURBEAUTY 2021</div>
+            <div class="follow-us w-2/4 flex flex-wrap justify-between ml-auto text-red-300">
+                <div class="ig mr-2">Follow Us <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/stepupyourbeauty/">@StepUpYourBeauty</a></div>
+                <div class="cr">
+                    <a href="https://youtube.com/channel/UCc890zSh_lViKkR7NHkG7Aw">
+                        Subscribe on Youtube <i class="fab fa-youtube"></i> StepUpYourBeauty
+                    </a>
+                </div>
+                <div class="mt-4 ml-auto text-xs">COPYRIGHT &copy;STEPUPYOURBEAUTY 2021</div>
             </div>
         </div>
     </footer>
