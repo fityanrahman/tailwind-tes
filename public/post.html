@@ -7,13 +7,31 @@
     <title>Step Up Your Beauty</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/css/all.js"></script>
+    <style>
+        .videowrapper {
+            float: none;
+            clear: both;
+            width: 100%;
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+        .videowrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <header class="lg:container px-6 xl:px-48 lg:mx-auto flex justify-between items-center mt-8">
         <a href="/" class="logo w-1/5"><img src="assets/img/head_logo.png" alt=""></a>
-        <div class="head-links w-2/5 px-8 flex justify-between">
-            <a href="sma.html" class="font-av-light text-sm md:text-lg">Social Media</a>
-            <a href="eshape.html" class="font-av-light text-sm md:text-lg">E-SHAPE</a>
+        <div class="head-links w-2/5 px-4 md:px-8 flex justify-between">
+            <a href="sma.html" class="font-av-light text-xs md:text-lg">Social Media</a>
+            <a href="eshape.html" class="font-av-light text-xs md:text-lg">E-SHAPE</a>
         </div>
         <input type="search" class="search w-1/5 text-xs sm:text-base h-8 block border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 placeholder-red-500" placeholder="Find Your Clinic!">
     </header>
@@ -21,12 +39,14 @@
     <!-- <section class="posts md:container lg:px-48 lg:mx-auto mt-24"> -->
     <section class="sm-article xl:container px-6 md:px-12 xl:px-48 lg:mx-auto my-16">
 
-        <div class="post md:container lg:px-48">
+        <div class="post md:container mx-auto lg:px-48">
             <p class="font-av-heavy text-4xl text-center capitalize">
                 Suntik Filler buat bibir kamu lebih cantik.
             </p>
-            <img src="assets/img/sma2.png" class="w-full mx-auto my-12" alt="">
-            <p class="text-xl text-justify">
+            <!-- <img src="assets/img/sma2.png" class="w-full mx-auto my-12" alt=""> -->
+            <div class="w-full videowrapper mt-12 mb-8">
+                <iframe src="https://www.youtube.com/embed/loPKmxUndhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+            <p class="text-lg md:text-2xl text-justify leading-tight">
                 Pernah dong mendengar tentang suntik filler? Ingin tahu rahasia tampil lebih kami? Quisque vel molestie quam. Vestibulum eu mi scelerisque dui auctor suscipit id eget risus. Donec imperdiet nulla quis ex dictum, sed maximus tortor tristique. Duis luctus lacus malesuada felis pharetra rutrum. Suspendisse laoreet elit.
             </p>
         </div>
@@ -34,23 +54,23 @@
     </section>
 
     <footer class="bg-red-900 py-8">
-        <div class="foot-content xl:container px-6 md:px-12 xl:px-48 md:mx-auto text-xs lg:text-base">
-            <div class="foot-top flex justify-between items-center md:mb-6">
+        <div class="foot-content xl:container px-6 md:px-12 xl:px-48 md:mx-auto text-sm lg:text-base">
+            <div class="foot-top flex justify-between items-center mb-3 md:mb-6">
                 <a href="/" class="logo w-1/2 md:w-1/4 pr-16"><img src="http://dev6.stepupyourbeauty.com/templateFront/uploads/logo/logo_61963a1972c531.png" alt=""></a>
-                <div class="head-links w-2/4 flex justify-between text-white">
-                    <a href="sma.html">SOCIAL MEDIA</a>
-                    <a href="eshape.html">E-SHAPE</a>
-                    <a href="maps.html">FIND YOUR CLINIC</a>
+                <div class="head-links w-2/4 flex flex-col sm:flex-row justify-between text-white md:text-base">
+                    <a href="sma.html" class="mb-1">SOCIAL MEDIA</a>
+                    <a href="eshape.html" class="mb-1">E-SHAPE</a>
+                    <a href="maps.html" class="mb-1">FIND YOUR CLINIC</a>
                 </div>
             </div>
             <div class="follow-us w-2/4 flex flex-wrap justify-between ml-auto text-red-300">
-                <div class="ig mr-2">Follow Us <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/stepupyourbeauty/">@StepUpYourBeauty</a></div>
+                <div class="ig mr-2 mb-2">Follow Us <br> <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/stepupyourbeauty/">@StepUpYourBeauty</a></div>
                 <div class="cr">
                     <a href="https://youtube.com/channel/UCc890zSh_lViKkR7NHkG7Aw">
-                        Subscribe on Youtube <i class="fab fa-youtube"></i> StepUpYourBeauty
+                        Subscribe <br> <i class="fab fa-youtube"></i> StepUpYourBeauty
                     </a>
                 </div>
-                <div class="mt-4 ml-auto text-xs">COPYRIGHT &copy;STEPUPYOURBEAUTY 2021</div>
+                <div class="mt-4 ml-auto text-xs">&copy; COPYRIGHT STEPUPYOURBEAUTY 2022</div>
             </div>
         </div>
     </footer>
